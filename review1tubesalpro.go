@@ -63,7 +63,7 @@ func menambahMakanan(A *arrMakanan, n *int) {
 			fmt.Println("Data sudah penuh, tidak bisa menambah lagi.")
 			break
 		}
-		fmt.Printf("Data ke-%d\n", i+1)
+		
 		fmt.Print("Masukkan kategori makanan / minuman: ")
 		fmt.Scan(&(*A)[*n].kategori)
 
@@ -83,7 +83,7 @@ func menambahMakanan(A *arrMakanan, n *int) {
 func tampilkanMakanan(A *arrMakanan, n int) {
 	var i int
 	for i = 0; i < n; i++ {
-		fmt.Printf("Data ke-%d:\n", i+1)
+		
 		fmt.Println("Kategori    :", A[i].kategori)
 		fmt.Println("Nama        :", A[i].nama)
 		fmt.Println("Jumlah      :", A[i].jumlah)
